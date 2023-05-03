@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Montserrat:wght@300&family=Ultra&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: #e8e2d4;
+}
+#container{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(180, 169, 156);
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/intro-image.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header1{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    flex:2.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.logo img{
+    width: 9em;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    animation: 0.7s cherry;
+}
+@keyframes cherry {
+    0%{
+        opacity: 0;
+        margin-top: -5%;
+    }
+}
+.navigation{
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    padding-bottom: 8%;
+    padding-top: 5%;
+    flex: 2.5;
+}
+.header2{
+    width: 100%;
+    height: 70vh;
+}
+.intro{
+    width: 60%;
+    height: 75vh;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5em;
+    color: rgb(180, 169, 156);
+    animation: 1s intro;
+}
+@keyframes intro {
+    0%{
+        padding-right: 1000px;
+        opacity: 0;
+    }
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.751);
+}
+li {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    display: inline;
+    padding: 3%;
+}
+li:hover {
+    color: grey;
+}
+#menu {
+    padding-block: 5%;
+    font-weight: 200;
+}
+.header3{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+}
+.arrow{
+    display: inline-block;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #5a2f13;
+    animation: jump 1.5s infinite;
+}
+@keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+#cakes{
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #fce4d0;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d09f80' fill-opacity='0.33'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+.choose-category{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  font-family: 'Abril Fatface', cursive;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cakes-content{
+  width: 100%;
+  height: fit-content;
+}
+
+.title{
+  font-size: 3em;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+  padding-bottom: 5%;
+  color: #5a2f13;
+}
+.container {
+  width: 80%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em 2em;
+  grid-auto-flow: row;
+  grid-template-areas:
+  "cake1 cake2 cake3";
+}
+.container div{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 50vh;
+  border-radius: 0px;
+  box-shadow:  31px 31px 100px #c8cbc6, -31px -31px 100px #ffffff;
+}
+.info{
+  color: #5a2f13;
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(219, 215, 215, 0.711);
+}
+.info:hover{
+  background-color: rgba(219, 215, 215, 0.898);
+}
+#cake1 { 
+  grid-area: cake1;
+  background-image: url(images/weddingcake.png);
+}
+#cake2 { 
+  grid-area: cake2;
+  background-image: url(images/babycake.png);
+}
+#cake3 { 
+  grid-area: cake3; 
+  background-image: url(images/bdaycake.png);
+}
+#wedding-cakes{
+  background-image: url(images/wedding-section.svg);
+}
+.section-settings{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 10%;
+}
+.content-field{
+  width: 100%;
+  height: fit-content;
+}
+.section-title{
+  padding-block: 5%;
+  color:#5a2f13;
+  font-size: 3em;
+  font-family: 'Abril Fatface', cursive;
+  font-weight:300;
+}
+#products{
+  width: 100%;
+  height: fit-content;
+}
+#gender-cakes{
+  background-image: url(images/gender.svg);
+}
+#birthday-cakes{
+  background-image: url(images/birthday-section.svg);
+}
+.display-cakes {
+  margin-top: 5%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120vh;
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8em 4em; 
+  grid-template-areas: 
+  "display1 display2 display3"
+  "display4 display5 display6"; 
+  }
+.display-cakes div{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#wedding1{
+  background-image: url(images/onecake.png);
+  grid-area: display1;
+}
+#wedding2{
+  background-image: url(images/wedding6.png); 
+  grid-area: display2;
+}
+#wedding3{
+  background-image: url(images/wedding5.png);
+  grid-area: display3;
+}
+#wedding4{
+  background-image: url(images/wedding4.png);
+  grid-area: display4;
+}
+#wedding5{
+  background-image: url(images/three-cake.png);
+  grid-area: display5;
+}
+#wedding6{
+  background-image: url(images/two-cake.png);
+  grid-area: display6;
+}
+.display{
+  display: flex; 
+  align-items: flex-end; 
+  border-radius: 0px;
+  box-shadow:  31px 31px 100px #c8cbc6, -31px 0px 100px #ffffff;
+}
+.content{
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  flex-direction: column;
+}
+.content div{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.description{
+  flex: 1;
+  background-color: rgba(255, 192, 203, 0.586);
+}
+.price{   
+  display: flex;
+  flex: 0.7;
+} 
+.price div{
+  height: 100%;
+  flex: 1;
+  background-color: white;
+}
+#button{
+  height: 100%;
+  flex: 1;
+  background-color: white;
+  border: none;
+  color: rgb(83, 207, 83);
+}
+#button:hover{
+  background-color: rgb(83, 207, 83);
+  color: white;
+}
+#message-box{
+  color: grey;
+  font-family: 'Montserrat', sans-serif;
+  padding-block: 3%;
+  font-size: 1.1em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: fit-content;
+  background-color:rgba(255, 255, 255, 0.887);
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#gender1{
+  background-image: url(images/gender1.png);
+  grid-area: display1;
+}
+#gender2{
+  background-image: url(images/gender2.png);
+  grid-area: display2;
+}
+
+#gender3{
+  background-image: url(images/gender3.png);
+  grid-area: display3;
+}
+
+#gender4{
+  background-image: url(images/gender4.png);
+  grid-area: display4;
+}
+
+#gender5{
+  background-image: url(images/gender5.png);
+  grid-area: display5;
+}
+
+#gender6{
+  background-image: url(images/gender6.png);
+  grid-area: display6;
+}
+
+#birthday1{
+  background-image: url(images/bday1.png);
+  grid-area: display1;
+}
+#birthday2{
+  background-image: url(images/bday2.png);
+  grid-area: display2;
+}
+#birthday3{
+  background-image: url(images/bday3.png);
+  grid-area: display3;
+}
+#birthday4{
+  background-image: url(images/bday4.png);
+  grid-area: display4;
+}
+#birthday5{
+  background-image: url(images/bday5.png);
+  grid-area: display5;
+}
+#birthday6{
+  background-image: url(images/bday6.png);
+  grid-area: display6;
+}
+.section-settings{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 10%;
+}
+#orders{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background: rgb(232,226,212);
+  background: radial-gradient(circle, rgba(232,226,212,1) 0%, rgba(255,255,255,1) 47%);
+  height: fit-content;
+}
+.content-field2{
+  width: fit-content;
+  height: 100%;
+}
+#order-list{
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: fit-content;
+  color: black;
+}
+#total-price{
+  padding-top: 10%;
+  color: green;
+  font-family: 'Montserrat', sans-serif;
+}
+#footer{
+  padding-top: 5%;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  background: url(images/footer.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#footer li{
+  color: grey;
+}
+#checkout{
+  margin-top: 4%;
+  background-color: #5a2f139a;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#checkout:before{
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+#checkout:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+@media (min-width: 768px) {
+  #checkout {
+    padding: 16px 48px;
+  }
+}
+.map{
+  width: 40%;
+}
+.where{
+  font-size: 1.5em;
+  padding-bottom: 2%;
+  color: rgb(240, 240, 240);
+  font-family: 'Montserrat', sans-serif;
+}
+@media (max-width: 902px) {
+  .container {
+   display: block;
+   margin-top: 10%;
+   width: 70%;
+  }
+  .display-cakes {
+    display: block;
+    width: 70%;
+    height: fit-content;
+  }
+  .display{
+    margin-bottom: 10%;
+  }
+  #cakes{
+    height: fit-content;
+    padding-block: 10%;
+  }
+  .cake{
+    margin-bottom: 10%;
+  }
+  .intro{
+    font-size: 3em;
+    width: 80%;
+  }
+  .title{
+    font-size: 2.5em;
+  }
+  .section-title{
+    font-size: 2.5em;
+  }
+  .content{
+    margin-top: 60%;
+  }
+  .map{
+    width: 65%;
+    margin-block: 5%;
+  }
+  #message-box{
+    width: 80%;
+  }
+  li{
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 505px) {
+  .container div{
+    height: 40vh;
+}
+}
+
+.nr{
+  margin-top: 2%;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+  
+
+
+  
+
+      

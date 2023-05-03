@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake shop</title>
+</head>
+<script src="index.js"></script>
+<body>
+
+    <div id="container">
+        <section id="header">
+            <div class="header1">
+                <div class="logo">
+                    <img src="images/cherry.png" alt="">
+                </div>
+                <div class="navigation">
+                    <div id="menu">
+                        <ul>
+                            <a href="#">
+                                <li>Home</li>
+                            </a>
+            
+                            <a href="#cakes">
+                                <li>Menu</li>
+                            </a>
+                        
+                            <a href="#orders">
+                                    <li>Order</li>
+                            </a>
+
+                            <a href="#footer">
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header2">
+                <div class="intro">Life is sweeter when there's cake.
+                </div>
+            </div>
+            <div class="header3">
+                <a href="#cakes"><div class="arrow"></div></a>
+                </div>
+        </section>
+
+        <section id="cakes">
+            <div class="cakes-content">
+            <div class="title">What's the occasion?</div>
+            <div class="choose-category">
+            <div class="container">
+               
+                <div id="cake1" class="cake">
+                    <a href="#wedding-cakes" class="info">Wedding cakes</a>
+                </div>
+            
+                <div id="cake2" class="cake">
+                    <a href="#gender-cakes" class="info">Gender reveal cakes</a>
+                </div>
+                <div id="cake3" class="cake">
+                    <a href="#birthday-cakes" class="info">Birthday cakes</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        </section>
+
+        <div id="message-box" class="centered" style="display: none;"></div>
+        <section id="products">
+
+        <section id="wedding-cakes" class="section-settings">
+            <div class="content-field">
+            <div class="section-title">Wedding Cakes</div>
+            <div class="display-cakes">
+                <div id="wedding1" class="display">
+                    <div class="content">
+                    <div class="description">White cake with pink roses</div>
+                    <div class="price">
+                        <div class="price1">$89.00</div>
+                        <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                    </div>
+
+
+                </div>
+                </div>
+                <div id="wedding2" class="display">
+                    <div class="content">
+                        <div class="description">Heart-shaped cake with figures</div>
+                        <div class="price">
+                            <div class="price1">$125.00</div>
+                            <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                        </div>
+    
+                    </div>
+                </div>
+                <div id="wedding3" class="display">
+                    <div class="content">
+                        <div class="description">Roses cake with pink ribbons</div>
+                        <div class="price">
+                            <div class="price1">$98.00</div>
+                            <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                        </div>
+                   
+    
+                    </div>
+                </div>
+                <div id="wedding4" class="display">
+                    <div class="content">
+                        <div class="description">White cake with purple roses</div>
+                        <div class="price">
+                            <div class="price1">$142.00</div>
+                            <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                        </div>
+    
+                    </div>
+                </div>
+                <div id="wedding5" class="display">
+                    <div class="content">
+                        <div class="description">Pink roses and pink ribbons cake</div>
+                        <div class="price">
+                            <div class="price1">$76.00</div>
+                            <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                        </div>
+    
+                    </div>
+                </div>
+                <div id="wedding6" class="display">
+                    <div class="content">
+                        <div class="description">4-floor white cake with roses</div>
+                        <div class="price">
+                            <div class="price1">$170.00</div>
+                            <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                        </div>
+    
+                    </div>
+                </div>
+               </div>
+                
+              </div>
+        </section>
+
+        <section id="gender-cakes" class="section-settings">
+            <div class="content-field">
+                <div class="section-title">Gender Reveal Cakes</div>
+                <div class="display-cakes">
+                    <div id="gender1" class="display">
+                        <div class="content">
+                        <div class="description">Cake with macarons and icing</div>
+                        <div class="price">
+                            <div class="price1">$75.00</div>
+                            <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                        </div>
+    
+
+                    </div>
+                    </div>
+                    <div id="gender2" class="display">
+                        <div class="content">
+                            <div class="description">Cake with baby shoes decor</div>
+                            <div class="price">
+                                <div class="price1">$65.00</div>
+                                <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div id="gender3" class="display">
+                        <div class="content">
+                            <div class="description">Blue cake with pink icing and sprinkles</div>
+                            <div class="price">
+                                <div class="price1">$65.00</div>
+                                <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                            </div>
+                       
+        
+                        </div>
+                    </div>
+                    <div id="gender4" class="display">
+                        <div class="content">
+                            <div class="description">Cake with macarons and lollipops</div>
+                            <div class="price">
+                                <div class="price1">$75.00</div>
+                                <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div id="gender5" class="display">
+                        <div class="content">
+                            <div class="description">Blue bow and pink tutu cake</div>
+                            <div class="price">
+                                <div class="price1">$80.00</div>
+                                <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div id="gender6" class="display">
+                        <div class="content">
+                            <div class="description">"Boy or girl" frosting cake</div>
+                            <div class="price">
+                                <div class="price1">$89.00</div>
+                                <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                   </div>
+                    
+                  </div>
+        </section>
+
+        <section id="birthday-cakes" class="section-settings">
+            <div class="content-field">
+                <div class="section-title">Birthday Cakes</div>
+                <div class="display-cakes">
+                    <div id="birthday1" class="display">
+                        <div class="content">
+                        <div class="description">White cake with cookies</div>
+                        <div class="price">
+                            <div class="price1">$65.00</div>
+                            <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                        </div>
+    
+    
+                    </div>
+                    </div>
+                    <div id="birthday2" class="display">
+                        <div class="content">
+                            <div class="description">Pink marzipan cake with ribbons</div>
+                            <div class="price">
+                                <div class="price1">$95.00</div>
+                                <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div id="birthday3" class="display">
+                        <div class="content">
+                            <div class="description">White and blue frosting cake</div>
+                            <div class="price">
+                                <div class="price1">$60.00</div>
+                                <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                            </div>
+                       
+        
+                        </div>
+                    </div>
+                    <div id="birthday4" class="display">
+                        <div class="content">
+                            <div class="description">Rainbow cake with strawberry filling</div>
+                            <div class="price">
+                                <div class="price1">$52.00</div>
+                                <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div id="birthday5" class="display">
+                        <div class="content">
+                            <div class="description">Peanut butter and chocolate cake</div>
+                            <div class="price">
+                                <div class="price1">$45.00</div>
+                                <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div id="birthday6" class="display">
+                        <div class="content">
+                            <div class="description">Oreo cake with vanilla frosting</div>
+                            <div class="price">
+                                <div class="price1">$35.00</div>
+                                <button id="button" onclick="addToOrder(this); this.style.backgroundColor = 'green';;setTimeout(() => {this.style.backgroundColor = '';}, 700);">Order</button>
+                            </div>
+        
+                        </div>
+                    </div>
+                   </div>
+                    
+                  </div>
+        </section>
+        </section>
+
+        <section id="orders" class="section-settings">
+            <div class="content-field2">
+            <div class="section-title">Your Order</div>
+            <div id="order-list">
+                <div class="empty-cart">Your card is currently empty.</div>
+            </div>
+            <div id="total-price"></div>
+            <a target="_blank" href="checkout.html">
+            <button id="checkout">Proceed</button>
+        </a>
+            </div>
+        </section>
+
+        <section id="footer">
+            <p class="where">Where to find us?</p>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46940.21158541983!2d21.117527698354856!3d42.66637271822231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ee605110927%3A0x9365bfdf385eb95a!2sPristina!5e0!3m2!1sen!2scz!4v1683040650157!5m2!1sen!2scz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p class="nr">+38349000000 <br> email@gmail.com</p>    
+            <div id="menu" class="navigation">
+                    <ul>
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+        
+                        <a href="#cakes">
+                            <li>Menu</li>
+                        </a>
+    
+                    
+                        <a href="#orders">
+                                <li>Order</li>
+                            </a>
+                        <a href="#footer">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
